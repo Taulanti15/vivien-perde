@@ -1,63 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perde Vivien</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perde Vivien</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
 
-<header>
-<div style="display: flex; align-items: center; gap: 10px;">
-<img src="logo-dyqanit.jpg" alt="Logo Perde Vivien" style="height: 50px;">
-<h1>PERDE VIVIEN</h1>
+<header class="header">
+  <div class="container nav-container">
+    <div class="logo">PERDE VIVIEN</div>
+    <nav class="nav">
+      <a href="#home">Kryefaqja</a>
+      <a href="#rreth">Rreth</a>
+      <a href="#produkte">Produkte</a>
+      <a href="#kontakt" class="btn">Kontakt</a>
+    </nav>
   </div>
-<nav>
-<ul class="nav-links">
-  <li><a href="#rreth-nesh">Rreth Nesh</a></li>
-   <li><a href="#sherbimet">Shërbimet</a></li>
-   <li><a href="#kontakt">Kontakt</a></li>
-  </ul>
- </nav>
 </header>
 
-<section class="hero">
-<p class="subtitle">PERDE MODERNE</p>
-<h2>Stil dhe komfort për çdo ambient</h2>
-<div class="product">
-<img src="https://via.placeholder.com/600x300" alt="Perde mendafshi" />
-<div class="product-text">
-<h3>Perde mendafshi <span>&#8250;</span></h3>
-<p>Elegancë dhe luks në çdo ambient.</p>
-</div>
-</div>
+<section class="hero" id="home">
+  <div class="container hero-content" data-aos="fade-up">
+    <h1>Perde moderne</h1>
+    <p>Zgjidhni stilin tuaj të preferuar</p>
+    <a href="#produkte" class="btn">Shiko Produktet</a>
+  </div>
 </section>
 
-<section id="rreth-nesh">
-<h2>Rreth Nesh</h2>
-<p>Jemi një kompani shqiptare që ofrojmë perde cilësore dhe elegante për çdo shtëpi apo ambient biznesi.</p>
+<section class="section" id="produkte">
+  <div class="container" data-aos="fade-right">
+    <h2>Produkte</h2>
+    <p>Zbuloni koleksionin tonë të perdeve luksoze dhe moderne për çdo ambient.</p>
+  </div>
 </section>
 
-<section id="sherbimet">
-<h2>Shërbimet</h2>
-<ul>
-<li>Perde me përmasa të personalizuara</li>
-<li>Këshillim dizajni për ambientin tuaj</li>
-<li>Montim profesional</li>
-</ul>
+<section class="section light" id="rreth">
+  <div class="container" data-aos="fade-left">
+    <h2>Rreth Nesh</h2>
+    <p>Jemi kompani shqiptare që ofrojmë perde cilësore dhe elegante për çdo ambient banimi apo biznesi.</p>
+  </div>
 </section>
 
-<section id="kontakt">
-<h2>Kontakt</h2>
-<p>Email: <a href="mailto:info-perdevivien@gmail.com">info-perdevivien@gmail.com</a></p>
-<p>Vendndodhje: Rruga Hoxha Tahsin, Tiranë, Shqipëri</p>
+<section class="section" id="kontakt">
+  <div class="container" data-aos="fade-up">
+    <h2>Kontakt</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Emri juaj" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mesazhi juaj" required></textarea>
+      <button type="submit" class="btn">Dërgo Mesazh</button>
+    </form>
+  </div>
 </section>
 
-<footer>
-<p>&copy; 2025 Perde Vivien. Të gjitha të drejtat e rezervuara.</p>
+<footer class="footer">
+  <div class="container">
+    &copy; 2025 Perde Vivien. Të gjitha të drejtat e rezervuara.
+  </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
+
+
+
